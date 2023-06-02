@@ -1,0 +1,123 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	// 主包
+	"pages": [
+		// 首页
+		{
+			"path": "pages/home/index"
+		},
+		// 商城
+		{
+			"path": "pages/mall/index"
+		},
+		// 社区
+		{
+			"path": "pages/community/index"
+		},
+		// 我的
+		{
+			"path": "pages/mine/index"
+		},
+		// 城市选择
+		{
+			"path": "pages/home/city-list"
+		},
+		// 通用搜索页
+		{
+			"path": "pages/search"
+		},
+		// 搜索结果页
+		{
+			"path": "pages/search-result"
+		},
+		// 登录页
+		{
+			"path": "pages/login/index"
+		},
+		{
+			"path": "pages/chat/chat/chat"
+		},
+		{
+			"path": "pages/chat/promot/promot"
+		},
+		{
+			"path": "pages/chat/promot/promotDetail"
+		},
+		{
+			"path": "pages/pay/charge"
+		},
+		{
+			"path": "pages/mine/my"
+		},
+		{
+			"path": "pages/mine/about"
+		},
+		{
+			"path": "pages/mine/comment"
+		},
+		{
+			"path": "pages/mine/pwd"
+		},
+		{
+			"path": "pages/mine/service"
+		},
+		{
+			"path": "pages/mine/setting"
+		},
+		
+		{
+			"path": "pages/mine/history/history"
+		},
+		{
+			"path": "pages/mine/payHistory"
+		},
+		{
+			"path": "pages/mine/mimi"
+		},
+		{
+			"path": "pages/mine/xieyi"
+		},
+		// 欢迎页，不需要时放在最后
+		{
+			"path": "pages/start-page"
+		}
+	],
+	// 副包
+	// 分包预载配置
+	"preloadRule": {
+
+	},
+	// 全局配置
+	"globalStyle": {
+		// 全局自定义导航栏
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black"
+	},
+	// tabbar配置
+	"tabBar": {
+		"color": "#8F92A1",
+		"selectedColor": "#171717",
+		"list": [{
+			"text": "首页",
+			"pagePath": "pages/home/index",
+			"iconPath": "./static/tabbar/home.png",
+			"selectedIconPath": "./static/tabbar/home_active.png"
+		}, {
+			"text": "热门",
+			"pagePath": "pages/chat/promot/promot",
+			"iconPath": "./static/tabbar/community.png",
+			"selectedIconPath": "./static/tabbar/community_active.png"
+		}, {
+			"text": "我的",
+			"pagePath": "pages/mine/my",
+			"iconPath": "./static/tabbar/user.png",
+			"selectedIconPath": "./static/tabbar/user_active.png"
+		}]
+	},
+	// 启动模式配置
+	"condition": {
+
+	}
+}
